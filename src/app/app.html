@@ -1,0 +1,2 @@
+<app-login *ngIf="!(isAuthenticated$ | async)"></app-login>
+<app-task-list *ngIf="isAuthenticated$ | async"></app-task-list>
