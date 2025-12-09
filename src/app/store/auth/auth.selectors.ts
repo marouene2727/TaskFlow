@@ -10,5 +10,5 @@ export const selectCurrentUser = createSelector(
 
 export const selectIsAuthenticated = createSelector(
   selectCurrentUser,
-  (user) => !!user
+  (user) => !!user  // si  le user existe, alors true sinon false 
 );
